@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+        
+        <link rel="stylesheet" href="index.css">
+        <title>DBKL Mapbox</title>
+    </head>
+    <body>
+        <center><h1>DBKL</h1>
+            
+            
+            <div class="mainCont"><canvas id="myChart" width="400" height="400"></canvas></div>
+            <div class="mainCont"><canvas id="doughnut" width="400" height="400"></canvas></div>
+            <div class="mainCont"></div>
+            <div class="mainCont"><canvas id="myChart1" width="400" height="400"></canvas></div>
+            <div class="mainCont"><div id="map"></div></div>
+            <div class="mainCont"></div>
+        
+        </center>
+    </body>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaXpydWxmaXphbCIsImEiOiJjanl4c3N4bXIwNXEyM25tcDI0Y3ZpbGk1In0.1jrAAqPJCyUihJthcX7ltQ';
+        var map = new mapboxgl.Map({
+        container: 'map', 
+        style: 'mapbox://styles/izrulfizal/cjznv2kdj010t1cs7xaptw4bp',
+        center: [101.6869, 3.1390], 
+        zoom: 5 
+        });
+    </script>
+    <script src="index.js"></script>
+</html>

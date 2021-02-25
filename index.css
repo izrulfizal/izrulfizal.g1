@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(0 0 0);
+    padding:20px;
+
+    
+}
+#map { 
+    
+    width: 350px; 
+    height:350px;
+    outline: white 2px solid;
+}
+h1{
+    color:#65ffff;
+    
+}
+.mainCont{
+    outline:2px solid white;
+    height:350px;
+    width:350px;
+    display:inline-block;
+    margin: 10px;
+    vertical-align: bottom;
+
+
+}
