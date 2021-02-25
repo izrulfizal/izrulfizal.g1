@@ -12,11 +12,11 @@
             
             
             <div class="mainCont"><canvas id="myChart" width="400" height="400"></canvas></div>
-            <div class="mainCont"><canvas id="doughnut" width="200" height="200"></canvas></div>
+            <div class="mainCont"><canvas id="doughnut" width="400" height="400"></canvas></div>
             <div class="mainCont"><canvas id="myChart2" width="400" height="400"></canvas></div>
             <div class="mainCont"><canvas id="myChart1" width="400" height="400"></canvas></div>
             <div class="mainCont"><div id="map"></div></div>
-            <div class="mainCont"></div>
+            <div class="mainCont"><canvas id="polararea" width="400" height="400"></canvas></div>
         
         </center>
     </body>
@@ -25,8 +25,10 @@
         var map = new mapboxgl.Map({
         container: 'map', 
         style: 'mapbox://styles/izrulfizal/cjznv2kdj010t1cs7xaptw4bp',
-        center: [101.6869, 3.1390], 
-        zoom: 5 
+        center: [102.6869, 4.1390], 
+        pitch: 60, // pitch in degrees
+        // bearing: -60, // bearing in degrees
+        zoom: 5.5 
         });
     </script>
     <script src="index.js"></script>

@@ -122,10 +122,37 @@ var myChart = new Chart(ctx1, {
 });
 
 var ctx2 = document.getElementById('doughnut').getContext('2d');
-ctx2.canvas.width = 300;
-ctx2.canvas.height = 300;
 var myDoughnutChart = new Chart(ctx2, {
     type: 'doughnut',
+    data: {
+        datasets: [{
+            data: [10, 20, 30],
+            backgroundColor: [
+                'rgba(75, 112, 192, 0.2)',
+                'rgba(75, 152, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ],
+            borderColor: [
+                'rgba(75, 112, 192, 0.2)',
+                'rgba(75, 152, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ]
+
+        }],
+    
+       
+        labels: [
+            'Item 1',
+            'Item 2',
+            'Item 3'
+        ],
+
+    }
+});
+
+var ctx5 = document.getElementById('polararea').getContext('2d');
+var myDoughnutChart = new Chart(ctx5, {
+    type: 'polarArea',
     data: {
         datasets: [{
             data: [10, 20, 30],
