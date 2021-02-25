@@ -122,8 +122,10 @@ var myChart = new Chart(ctx1, {
 });
 
 var ctx2 = document.getElementById('doughnut').getContext('2d');
+ctx2.canvas.width = 300;
+ctx2.canvas.height = 300;
 var myDoughnutChart = new Chart(ctx2, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
         datasets: [{
             data: [10, 20, 30],
@@ -147,5 +149,48 @@ var myDoughnutChart = new Chart(ctx2, {
             'Item 3'
         ],
 
+    }
+});
+
+
+
+var ctx3 = document.getElementById('myChart2').getContext('2d');
+var myChart = new Chart(ctx3, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6'],
+        datasets: [{
+            label: '#',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+
+            ],
+            borderColor: [
+
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(75, 192, 192, 1)'
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
     }
 });
