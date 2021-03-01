@@ -1,14 +1,25 @@
 body{
     background-color: rgb(0 0 0);
-    padding:20px;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+
 
     
 }
 #map { 
     
-    width: 350px; 
-    height:350px;
-    outline: white 2px solid;
+ position: absolute; 
+ top: 0; 
+ bottom: 0; 
+ width: 100%; 
+
+}
+    
+
 }
 h1{
     color:#65ffff;
@@ -16,11 +27,25 @@ h1{
 }
 .mainCont{
     /* outline:2px solid white; */
-    height:350px;
-    width:350px;
-    display:inline-block;
-    margin: 10px;
-    vertical-align: bottom;
+    height:250px;
+    width:250px;
+    margin: 30px;
+    position:absolute;
+    top:0;
 
 
+
+}
+
+.floatRight{
+    float:right;
+    right:0;
+}
+.floatLeft{
+    float:left;
+    left:0;
+}
+
+#myChart{
+    visibility:hidden;
 }
