@@ -1,0 +1,88 @@
+#logoHeader {
+  width: 500px;
+  position:relative;
+  z-index: 999;
+  animation: floatingAnim 2.5s linear infinite;
+}
+
+#mainCont {
+  
+  color: white;
+  position:relative;
+  z-index: 999;
+}
+
+.typewriter{
+  overflow: hidden; 
+  border-right: .15em solid red; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+}
+
+@keyframes floatingAnim {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50%{
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10%;
+  opacity: 0.5;
+}
+
+.fa:hover {
+    opacity: 1.5;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ef8a3b;
+  color: white;
+}
+
+.fa-github {
+  background: #484848;
+  color: white;
+}
+
+#socialLinks{
+  margin-top: 30px;
+  
+}
