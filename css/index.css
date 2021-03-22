@@ -10,6 +10,7 @@
   color: white;
   position:relative;
   z-index: 999;
+  width: 825px;
 }
 
 .typewriter{
@@ -83,6 +84,21 @@
 }
 
 #socialLinks{
-  margin-top: 30px;
+  margin: 20px;
   
 }
+
+.textCont{
+  background-color: #ffffffb8;
+  padding: 10px;
+  color: black;
+}
+
+.logoImg{
+  height: 15px;
+ 
+}
+p{
+  text-align: justify;
+}
+
