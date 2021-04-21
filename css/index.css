@@ -58,9 +58,14 @@ body {
 
 #iconTray{
   border:solid 1px #000000;
-  width: 50px;
+  width: 100px;
   height:26px;
   float:right;
   background-color:#5b97dc;
-  
+}
+
+#timeBar{
+  color: white;
+  margin:auto;
+  font-size:13px;
 }
