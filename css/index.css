@@ -1,104 +1,66 @@
-#logoHeader {
-  width: 500px;
-  position:relative;
-  z-index: 999;
-  animation: floatingAnim 2.5s linear infinite;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#mainCont {
-  
-  color: white;
-  position:relative;
-  z-index: 999;
-  width: 825px;
+body {
+font-family: Tahoma, sans-serif;
 }
 
-.typewriter{
-  overflow: hidden; 
-  border-right: .15em solid red; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+#bottomBar{
+  outline: solid #8ec9ff 2px;
+  width: 100%;
+  position:absolute;
+  bottom:0px;
+  height:30px;
+  background-color:#3B77BC;
+}
+
+#startBtn{
+  border: solid 2px #4e4e4e56;
+  width: 80px;
+  height: 26px;
+  background-color: #81C046;
+  border-radius: 1px 20px 20px 1px;
+  color:white;
+}
+
+#xpLogo{
+  width: 25px;
+  margin-left:5px;
+}
+
+#xpLogo, #startText{
+  display:inline;
+  vertical-align: middle;
+
+}
+
+#startText{
+  font-size: 17px;
+  font-style: italic;
+}
+
+body {
+ background-image: url("../img/xp-background.jpg");
+ background-color: #cccccc;
+ background-size: cover;
+ background-repeat:no-repeat;
+ background-position:center;
+
 }
 
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+#startBtn, #iconTray{
+  display:inline-flex
 }
 
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: red; }
-}
-
-@keyframes floatingAnim {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50%{
-    transform: translate(0, 25px);
-  }
-  100% {
-    transform: translate(0, 0px);
-  }
-}
-
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 10%;
-  opacity: 0.5;
-}
-
-.fa:hover {
-    opacity: 1.5;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #ef8a3b;
-  color: white;
-}
-
-.fa-github {
-  background: #484848;
-  color: white;
-}
-
-#socialLinks{
-  margin: 20px;
+#iconTray{
+  border:solid 1px #000000;
+  width: 50px;
+  height:26px;
+  float:right;
+  background-color:#5b97dc;
   
 }
-
-.textCont{
- 
-  padding: 10px;
-  
-}
-
-.logoImg{
-  height: 15px;
- 
-}
-p{
-  text-align: justify;
-}
-
