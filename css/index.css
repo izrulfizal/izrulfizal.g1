@@ -162,3 +162,27 @@ body {
         -ms-user-select: none; 
             user-select: none; 
 }
+
+#secondBar, #firstBar{
+  height: 100%;
+}
+
+#secondBar{
+  background-color:#2f78cd91;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+
+}
+
+/* Clear floats after the columns */
+#directoryBar:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
