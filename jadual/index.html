@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Sistem Jadual Bertugas KKLK</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/table.css">
+        <script src="js/onload.js"></script>
+    </head>
+    <body><center>
+        <h3>JADUAL BERTUGAS MAJLIS FELO & PEMBANTU FELO (MFPF) KKLK</h3>
+        <h1>MAC 2022</h1>
+
+        <!-- ================================================================ -->
+        <table class="tableClass" id="mainTable">
+            <thead>
+              <tr>
+                <th>AHAD</th>
+                <th>ISNIN</th>
+                <th>SELASA</th>
+                <th>RABU</th>
+                <th>KHAMIS</th>
+                <th>JUMAAT</th>
+                <th>SABTU</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell0-6"></td>
+              </tr>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell1-6"></td>
+              </tr>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell2-6"></td>
+              </tr>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell3-6"></td>
+              </tr>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell4-6"></td>
+              </tr>
+              <tr>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-0"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-1"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-2"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-3"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-4"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-5"></td>
+                <td ondrop="drop(event)" ondragover="allowDrop(event)" id="cell5-6"></td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <button class="printBtn" onclick="Popup()">Print</button>
+          <!-- ================================================================== -->
+
+          <div class="mainCont">
+            <div class="firstLevel">
+                <div draggable="true" ondragstart="drag(event)" class="nameCard" id="group1" colorbg="#7F58AF">
+
+                </div>
+                <div draggable="true" ondragstart="drag(event)" class="nameCard" id="group2">
+
+                </div>
+                <div draggable="true" ondragstart="drag(event)" class="nameCard" id="group3">
+
+                </div>
+                <div draggable="true" ondragstart="drag(event)" class="nameCard" id="group4">
+
+                </div>
+            </div>
+            <div class="secondLevel">
+                <textarea class="inputName" id="input1">
+            
+                </textarea>
+                <textarea class="inputName" id="input2">
+
+                </textarea>
+                <textarea class="inputName" id="input3">
+
+                </textarea>
+                <textarea class="inputName" id="input4">
+
+                </textarea>
+            </div>
+            <div class="thirdlevel">
+                <button onclick="insertName()"class="inputBtn" id="btn1">
+                    Insert
+                </button>
+            </div>
+          </div>
+    </center></body>
+</html>

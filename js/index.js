@@ -25,7 +25,7 @@ startTime();
 document.getElementById('startBtn').onclick = function() {
     
     var startPanel = document.getElementById("startPanel");
-    if (startPanel.style.display === "block"){
+    if (startPanel.style.display = "block"){
         startPanel.style.display = "none";
     }
     else{

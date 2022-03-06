@@ -1,0 +1,31 @@
+
+table.tableClass {
+  width: 80%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #90A4AE;
+  border-style: solid;
+  color: #000000;
+  table-layout: fixed;
+  /* display:none; */
+}
+
+table.tableClass td, table.tableClass th {
+  border-width: 2px;
+  border-color: #90A4AE;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.tableClass thead {
+  background-color: #90A4AE;
+}
+
+table.tableClass td{
+  height: 30px;
+}
+
+@page { size: auto;  margin: 0mm; }
+
+
