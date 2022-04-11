@@ -42,7 +42,7 @@ document.getElementById('startBtn').onclick = function() {
 
 document.getElementById('firstButton').onclick = function() {
 
-    alert ("Belum siap lagi la :(");
+    // alert ("Belum siap lagi la :(");
 }
 
 document.getElementById('secondButton').onclick = function() {
