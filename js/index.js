@@ -1,3 +1,6 @@
+var startPanel = document.getElementById("startPanel");
+startPanel.style.display = "none";
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -23,12 +26,26 @@ function checkTime(i) {
 
 startTime();
 document.getElementById('startBtn').onclick = function() {
-    
-    var startPanel = document.getElementById("startPanel");
-    if (startPanel.style.display = "block"){
+    if (startPanel.style.display == "none"){
+        startPanel.style.display = "block";
+      
+    }
+    else if (startPanel.style.display == "block") {
         startPanel.style.display = "none";
+        
     }
     else{
-        startPanel.style.display = "block";
+        console.log("Start Panel Debug");
     }
+}
+
+
+document.getElementById('firstButton').onclick = function() {
+
+    alert ("Belum siap lagi la :(");
+}
+
+document.getElementById('secondButton').onclick = function() {
+
+    alert ("Ni pun belum siap lagi :(");
 }

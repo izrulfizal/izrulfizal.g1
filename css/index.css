@@ -186,3 +186,23 @@ body {
 
 }
 
+.leftBtn{
+/*   outline: solid 2px black; */
+  padding: 5px;
+  font-size: small;
+  margin: 5px;
+ 
+ 
+}
+
+.leftBtn:hover{
+  background-color: #89b2e3;
+}
+
+.leftBtn img{
+ width: 20px;
+ float:left;
+ padding-right: 10px;
+ margin-top: -2px
+ 
+}

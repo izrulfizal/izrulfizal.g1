@@ -1,8 +1,8 @@
 
 
-const marker = new mapboxgl.Marker()
-    .setLngLat([103.0700347, 1.8508956])
-    .addTo(map);
+// const marker = new mapboxgl.Marker()
+//     .setLngLat([103.0700347, 1.8508956])
+//     .addTo(map);
 
 
 
